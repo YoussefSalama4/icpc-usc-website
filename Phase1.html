@@ -1,0 +1,240 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICPC USC Community</title>
+  <link rel="stylesheet" href="CSS/Phase1.css">
+</head>
+
+<body>
+  <div>
+    <div class="home-container">
+
+      <div class="home-container2">
+        <div class="sideNav" id="sideNav">
+          <nav>
+            <ul>
+              <li><a href="first.html">Community</a></li>
+              <li><a href="newCommers.html">newCommers</a></li>
+              <li>
+                <a href="phase1.html#topic1">STL</a>
+              </li>
+              <li>
+                <a href="phase1.html#topic2">Ad-hocs</a>
+              </li>
+              <li>
+                <a href="phase1.html#topic3">Basic Math</a>
+              </li>
+              <li>
+                <a href="phase1.html#topic4">Greedy</a>
+              </li>
+              <li>
+                <a href="phase1.html#topic5">Binary Search</a>
+              </li>
+              <li><a href="main.php">Log out</a></li>
+
+            </ul>
+          </nav>
+        </div>
+        <div class="menuBtn" id="menubtn">
+          <img src="Imgs/menu.png" alt="" id="menu"> <!-- -------------- -->
+        </div>
+        <script>
+          var menuBtn = document.getElementById("menubtn")
+          var sideNav = document.getElementById("sideNav")
+          var menu = document.getElementById("menu")
+          sideNav.style.right = "-250px";
+          menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+              sideNav.style.right = "0";
+              menu.src = "Imgs/close.png"; //////////////////////
+            }
+            else {
+              sideNav.style.right = "-250px";
+              menu.src = "Imgs/menu.png";  //////////////////////
+            }
+          }
+        </script>
+        <div class="home-container3">
+          <div class="home-topic" id="topic1">
+            <h1 class="topicTitle">STL</h1>
+            <span class="home-text4">
+              <!-- The C++ STL (Standard Template Library) is a powerful set of C++ template classes to provide
+              general-purpose classes and functions with templates that implement many popular and commonly used
+              algorithms and data structures like vectors, lists, queues, and stacks -->
+            </span>
+            <br>
+            <iframe class="home-iframe" src="https://drive.google.com/file/d/1t0pq_qRhcNwvjbglPXG10_V8UUtU_wvZ/preview"
+              width="640" height="480" allow="autoplay"></iframe>
+            <div class="home-container4">
+              <div class="home-container5">
+                <h2 class="home-text5">Other Resources</h2>
+                <ul class="home-list list">
+                  <li class="list-item"><span><a
+                        href="https://drive.google.com/file/d/1vdfGia7mGCCATkfo8HFLnIfPO83VfwVR/view">STL session
+                        (old training)</a></span></li>
+                  <li class="list-item"><span><a href="https://w...content-available-to-author-only...e.com/watch?v=KAS83uXf_8s">
+                        Dr. Mostafa Saad</a></span></li>
+                  <li class="list-item"><span><a href="https://w...content-available-to-author-only...e.com/watch?v=YtZoV6qJWkA&t=572s">
+                        acmASCIS</a></span></li>
+                  <li class="list-item"><a
+                      href="https://w...content-available-to-author-only...e.com/playlist?list=PLCInYL3l2AainAE4Xq2kdNGDfG0bys2xp">
+                      Eng. Adel Nasim</a></li>
+                  <li class="list-item"><a href="https://c...content-available-to-author-only...s.com/group/1o3hdin3wD/contest/365693">
+                      Codeforces Sheet</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-------------------------------------->
+
+          <div class="home-topic" id="topic2">
+            <h1 class="topicTitle">Ad-hoc Techniques</h1>
+            <span class="home-text4">
+              <!-- We will learn some <a href="https://e...content-available-to-author-only...a.org/wiki/Ad_hoc">ad-hocs </a> like prefix sum, partial
+              sum, two pointers and sliding window algorithms -->
+            </span>
+            <br>
+            <h2 class="topicTitle">Prefix & Partial Sum</h2>
+            <iframe class="home-iframe" src="https://drive.google.com/file/d/1gqzVYjs7Sw7z_bmIXasbzIAFXSJh55Vk/preview"
+              width="640" height="480" allow="autoplay"></iframe>
+            <h2 class="topicTitle">Two Pointers</h2>
+            <iframe class="home-iframe" src="https://drive.google.com/file/d/1UmVe35lMmwLLEdtv2IGYJf719qMSmGUp/preview"
+              width="640" height="480" allow="autoplay"></iframe>
+            <div class="home-container4">
+              <div class="home-container5">
+                <h2 class="home-text5">Other Resources</h2>
+                <ul class="home-list list">
+                  <li class="list-item"><span><a href="https://w...content-available-to-author-only...e.com/watch?v=hqOqr6vFPp8&t=338s">Dr. Mostafa
+                        Saad (Prefix Sum)</a></span></li>
+                  <li class="list-item"><span><a href="https://w...content-available-to-author-only...e.com/watch?v=vF78qRAAyx4">Eng. Muhammed Afifi
+                        (Partial Sum)</a></span></li>
+                  <li class="list-item"><span><a href="https://w...content-available-to-author-only...e.com/watch?v=n-Xwrr8RFQ0&t=541s">Dr. Mostafa
+                        Saad (Two Pointers)</a></span></li>
+                  <li class="list-item"><span><a href="https://c...content-available-to-author-only...s.com/edu/course/2/lesson/9">
+                        ITMO University</a></span></li>
+                  <li class="list-item"><a href="https://c...content-available-to-author-only...s.com/group/1o3hdin3wD/contest/378462">
+                      Codeforces Sheet</a></li>
+                  <li class="list-item"><a
+                      href="https://drive.google.com/file/d/1g7SfitU19N5mphQg4DnI5ZWaxlbRgIRZ/view?usp=sharing">
+                      Sheet Upsolve</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-------------------------------------->
+
+
+          <div class="home-topic" id="topic3">
+            <h1 class="topicTitle">Basic Math</h1>
+            <span class="home-text4">
+              <!-- We will take an introduction to Number Theory.
+              We will study basic concepts like GCD, LCM, Factorization, Prime Tests and Modular Arithemetic -->
+            </span>
+            <br>
+            <iframe class="home-iframe" src="https://drive.google.com/file/d/1UR5G0QOJNrIOs2-SLmjnXPbkNA93RJFR/preview"
+              width="640" height="480" allow="autoplay"></iframe>
+            <div class="home-container4">
+              <div class="home-container5">
+                <h2 class="home-text5">Other Resources</h2>
+                <ul class="home-list list">
+                  <li class="list-item"><span><a
+                        href="https://w...content-available-to-author-only...e.com/watch?v=6QHFLzxSSgw&t=672s">acmASCIS</a></span></li>
+                  <li class="list-item"><span><a
+                        href="https://w...content-available-to-author-only...e.com/watch?v=9sqvjnvuLtY&list=PLPt2dINI2MIY7l5zyFd1W28rei3b-AXaJ&index=2">
+                        Dr. Mostafa Saad (Modular Arithemetic)</a></span></li>
+                  <li class="list-item"><span><a
+                        href="https://w...content-available-to-author-only...e.com/watch?v=VZBfW08ECgA&list=PLPt2dINI2MIY7l5zyFd1W28rei3b-AXaJ&index=3&t=1305s">
+                        Dr. Mostafa Saad (Primes)</a></span></li>
+                  <li class="list-item"><span><a
+                        href="https://w...content-available-to-author-only...e.com/watch?v=-5ApOQDhBtU&list=PLPt2dINI2MIY7l5zyFd1W28rei3b-AXaJ&index=4">
+                        Dr. Mostafa Saad (Factorization)</a></span></li>
+                  <li class="list-item"><span><a
+                        href="https://w...content-available-to-author-only...e.com/watch?v=YklnFXpq0ZE&list=PLPt2dINI2MIY7l5zyFd1W28rei3b-AXaJ&index=6&t=97s">
+                        Dr. Mostafa Saad (GCD, LCM, FIB, POW)</a></span></li>
+                  <li class="list-item"><span><a
+                        href="https://w...content-available-to-author-only...e.com/watch?v=L-Wzglnm4dM&list=PLl0KD3g-oDOEbtmoKT5UWZ-0_JbyLnHPZ&index=12&t=359s">
+                        Errichto (Binary Exponentiation)</a></span></li>
+                  <li class="list-item"><span><a
+                        href="https://w...content-available-to-author-only...e.com/watch?v=-OPohCQqi_E&list=PLl0KD3g-oDOEbtmoKT5UWZ-0_JbyLnHPZ&index=11&t=818s">
+                        Errichto (Modular Arithemetic)</a></span></li>
+                  <li class="list-item"><a
+                      href="https://drive.google.com/file/d/1-gVgqmdh1Reo8eUlf2CIJwy6xVS4xYkF/view?usp=sharing">
+                      Sheet Upsolve</a></li>
+                  <li class="list-item"><a
+                      href="https://drive.google.com/file/d/1Vyp3m3yIKPz_mIktzfy_E0Gc8LNDSatr/view?usp=sharing">
+                      Practice Session</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-------------------------------------->
+
+
+          <div class="home-topic" id="topic4">
+            <h1 class="topicTitle">Greedy Algorithms</h1>
+            <span class="home-text4">
+            </span>
+            <br>
+            <iframe class="home-iframe" src="https://drive.google.com/file/d/1ZiDv5tlDKQ8-dIIZXQG_WQTIVqvGPpYX/preview"
+              width="640" height="480" allow="autoplay"></iframe>
+            <div class="home-container4">
+              <div class="home-container5">
+                <h2 class="home-text5">Other Resources</h2>
+                <ul class="home-list list">
+                  <li class="list-item"><span><a href="https://w...content-available-to-author-only...e.com/watch?v=ARvQcqJ_-NY&t=481s">Abdul
+                        Bari</a></span></li>
+
+                  <li class="list-item"><span><a href="https://w...content-available-to-author-only...e.com/watch?v=iXxP_liQklk&t=957s">
+                        Dr. Mostafa Saad</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-------------------------------------->
+
+
+
+
+
+
+          <div class="home-topic" id="topic5">
+            <h1 class="topicTitle">Binary Search</h1>
+            <span class="home-text4">
+            </span>
+            <br>
+            <iframe class="home-iframe" src="https://drive.google.com/file/d/1bbs_iW130axzAKYevYKQPFvzCxYLlj_K/preview"
+              width="640" height="480" allow="autoplay"></iframe>
+            <div class="home-container4">
+              <div class="home-container5">
+                <h2 class="home-text5">Other Resources</h2>
+                <ul class="home-list list">
+                  <li class="list-item"><span><a href="https://w...content-available-to-author-only...e.com/watch?v=2G7RzlxTNPo&t=99s">
+                        Dr. Mostafa Saad</a></span></li>
+
+                  <li class="list-item"><span><a href="https://w...content-available-to-author-only...e.com/watch?v=GU7DpgHINWQ">
+                        Errichto</a></span></li>
+                  <li class="list-item"><span><a href="https://w...content-available-to-author-only...e.com/watch?v=C2apEw9pgtw">
+                        Abdul Bari</a></span></li>
+                  <li class="list-item"><span><a href="https://c...content-available-to-author-only...s.com/edu/course/2/lesson/6">
+                        ITMO University</a></span></li>
+
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-------------------------------------->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

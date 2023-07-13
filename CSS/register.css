@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(../Imgs/img2.jpg);
+    min-height: 109vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+   
+}
+.logo{
+    width: 240px;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+.parent{
+    display: flex;
+    justify-content: space-around;
+}
+.first{
+    padding:350px 0 ;
+}
+
+.login{
+    flex-basis: 30%;
+    border-radius: 30px;
+    color: white;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.5);
+}
+.login h1{
+    text-align: center;
+    font-size: 30px;
+    color: silver;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+}
+.login form{
+    padding-top: 30px;
+    color: white;
+}
+form .mail{
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 40px 0;
+    
+}
+.mail input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+.mail label{
+    position: absolute;
+    top: 80%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50px);
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.mail span::before{
+    content: '';
+    position: absolute;
+    top:40px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2691d9;
+    transition: 0.5s;
+}
+.mail:hover label {
+    left: -5px;
+    color:#2691d9;
+}
+.mail:hover span::before {
+    width: 100%;
+}
+
+
+
+input[type ="submit"]
+{
+    width: 50%;
+    height: 50px;
+    border: 1px solid;
+    background:#e91e63;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    margin: 20px 25%;
+    transition: 0.5s;
+}
+input[type ="submit"]:hover{
+    border-color:black ;
+    color: black;
+    
+}
+
+
+@media screen and (max-width:1110px){
+    .login{
+        flex-basis: 70%;
+    }
+}
